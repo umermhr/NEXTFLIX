@@ -12,7 +12,8 @@ const Layout: React.FC<ChildrenProvider> = ({ children }) => {
         minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#fff",
+        backgroundColor: "#141414",
+        color: "#fff",
       }}>
         <Navbar />
         <Box
