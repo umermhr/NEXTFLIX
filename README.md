@@ -4,6 +4,46 @@ Nextflix is a Netflix clone project built with [Next.js](https://nextjs.org), bo
 
 ## Getting Started
 
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/) or [bun](https://bun.sh/)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/nextflix.git
+cd nextflix
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Create a `.env` file in the root of your project and add the following environment variables:
+
+```env
+# Example .env file
+NEXT_PUBLIC_API_KEY=your_api_key_here
+NEXT_PUBLIC_API_URL=https://api.example.com
+```
+
+Make sure to replace `your_api_key_here` and `https://api.example.com` with your actual API key and URL.
+
+### Running the Development Server
+
 First, run the development server:
 
 ```bash
@@ -20,7 +60,36 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Folder Structure
+
+Here is an overview of the project's folder structure:
+
+```
+nextflix/
+├── app/
+│   ├── components/
+│   ├── pages/
+│   │   ├── api/
+│   │   ├── index.tsx
+│   │   └── ...
+│   ├── public/
+│   ├── styles/
+│   ├── .env
+│   ├── .gitignore
+│   ├── next.config.js
+│   ├── package.json
+│   └── ...
+```
+
+- `app/components/`: Contains reusable React components.
+- `app/pages/`: Contains the application's pages. Each file in this directory corresponds to a route in the application.
+- `app/pages/api/`: Contains API route handlers.
+- `app/public/`: Contains static assets such as images and fonts.
+- `app/styles/`: Contains global styles and CSS modules.
+- `.env`: Environment variables file (ignored by git).
+- `.gitignore`: Specifies files and directories to be ignored by git.
+- `next.config.js`: Configuration file for Next.js.
+- `package.json`: Contains project metadata and dependencies.
 
 ## Learn More
 
